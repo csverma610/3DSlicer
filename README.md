@@ -1,6 +1,7 @@
 # 3DSlicer
 
-## The purpose of this program is to produce slices of a triangular model using OpenGL
+## Purpose
+The purpose of this program is to produce slices of a triangular model using OpenGL
 library. It uses OpenCSG for boolean operations. Because OpenGL is run on GPU, slices
 is both efficient and reliable using this approach.
 

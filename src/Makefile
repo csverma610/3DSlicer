@@ -3,15 +3,10 @@ OBJS = area.o batch.o channelManager.o context.o frameBufferObject.o frameBuffer
 OBJS += main.o
 
 CPPFLAGS = -std=c++14 -O3 -fPIC
-CPPFLAGS += -I$(GLEW_ROOT)/include -I../include  
-
-#CPPFLAGS += -I$(QGLVIEWER_ROOT)/include
-#CPPFLAGS += -I$(QTDIR)/include -I$(QTDIR)/include/QtCore -I$(QTDIR)/include/QtXml -I$(QTDIR)/include/QtWidgets -I$(QTDIR)/include/QtGui -I$(QTDIR)/include/QtOpenGL
+CPPFLAGS += -I$(GLEW_DIR)/include -I../include  
 
 
-LIBS  = -lGL -lGLU -lglut -L$(GLEW_ROOT)/lib -lGLEW -lX11
-#LIBS += -L$(QGLVIEWER_ROOT)/lib -lQGLViewer
-#LIBS += -L$(QTDIR)/lib -lQt5Widgets -lQt5Core -lQt5Gui -lQt5OpenGL
+LIBS  = -lGL -lGLU -lglut -L$(GLEW_DIR)/lib -lGLEW -lX11
 
 
 csg:$(OBJS)
